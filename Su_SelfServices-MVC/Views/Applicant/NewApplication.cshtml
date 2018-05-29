@@ -1,0 +1,499 @@
+﻿<div class="container-fluid">
+    <br />
+    <div class="row">
+        <div role="tabpanel">
+            <div class="col-sm-3">
+                <ul class="nav nav-pills brand-pills nav-stacked" role="tablist">
+                    <li role="presentation" class="brand-nav active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;Personal Data</a></li>
+                    <li role="presentation" class="brand-nav"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;Contact Info</a></li>
+                    <li role="presentation" class="brand-nav"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;Education History</a></li>
+                    <li role="presentation" class="brand-nav"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;Preferances</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <strong>Name Arabic</strong>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="col col-sm-2">
+                                    <input id="txtFirstName" placeholder="First Name" class="form-control" type="text" />
+                                </div>
+                                <div class="col col-sm-2">
+                                    <input id="txtFirstName" placeholder="Second Name" class="form-control" type="text" />
+                                </div>
+                                <div class="col col-sm-2">
+                                    <input id="txtFirstName" placeholder="Third Name" class="form-control" type="text" />
+                                </div>
+                                <div class="col col-sm-2">
+                                    <input id="txtFirstName" placeholder="Family Name" class="form-control" type="text" />
+                                </div>
+                                <div class="col col-sm-2">
+                                    <input id="txtFirstName" placeholder="Last Name" class="form-control" type="text" />
+                                </div>
+
+                            </div>
+
+                            <br />
+                            <br />
+                            <div class="col-sm-2">
+                                <strong>Name English</strong>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="col col-sm-2">
+                                    <input id="txtFirstName" placeholder="First Name" class="form-control" type="text" />
+                                </div>
+                                <div class="col col-sm-2">
+                                    <input id="txtFirstName" placeholder="Second Name" class="form-control" type="text" />
+                                </div>
+                                <div class="col col-sm-2">
+                                    <input id="txtFirstName" placeholder="Third Name" class="form-control" type="text" />
+                                </div>
+                                <div class="col col-sm-2">
+                                    <input id="txtFirstName" placeholder="Family Name" class="form-control" type="text" />
+                                </div>
+                                <div class="col col-sm-2">
+                                    <input id="txtFirstName" placeholder="Last Name" class="form-control" type="text" />
+                                </div>
+                            </div>
+
+                            <br />
+                            <br />
+
+                            <div class="col-sm-2">
+                                <strong>Nationality</strong>
+                            </div>
+                            <div class="col-sm-10">
+                                <input list="Nationality" id="NationalityLst" class="form-control">
+                                <datalist id="Nationality">
+                                    <option value="None" selected="selected">
+                                    <option value="Egyption">
+                                    <option value="Syrian">
+                                    <option value="Saudi">
+                                </datalist>
+                            </div>
+                            <br />
+                            <br />
+
+                            <div class="col-sm-2">
+                                <strong>Nation ID</strong>
+                            </div>
+                            <div class="col-sm-10">
+                                <input id="txtNationID" class="form-control" type="number" />
+                            </div>
+
+                            <br /><br />
+
+                            <div class="col-sm-2">
+                                <strong>Religen</strong>
+                            </div>
+                            <div class="col-sm-10">
+                                <input list="ReligenLst" id="ReligenTextLst" class="form-control">
+                                <datalist id="ReligenLst">
+                                    <option value="None" selected="selected">
+                                    <option value="Muslim">
+                                    <option value="Christian">
+                                </datalist>
+                            </div>
+
+                            <br /><br />
+
+                            <div class="col-sm-2">
+                                <strong>Birth Date</strong>
+                            </div>
+                            <div class="col-sm-8">
+                                <input id="dtBirthDate" class="form-control" type="datetime" />
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="tab2">
+
+                        <div class="fram">
+                            <div id="LocationDiv">
+
+                            </div>
+                            <div class="col-sm-2">
+                                <strong>Country</strong>
+                            </div>
+                            <div>
+                                <input id="Countrytxt" type="text" list="CountryList" class="form-control" />
+                                <datalist id="CountryList">
+                                    <option>Egypt</option>
+                                    <option>Spain</option>
+                                    <option>Germany</option>
+                                    <option>Italy</option>
+                                </datalist>
+                            </div>
+
+                            <div class="col-sm-2">
+                                <strong>District</strong>
+                            </div>
+                            <div>
+                                <input id="Districttxt" type="text" list="DistrictList" class="form-control" />
+                                <datalist id="DistrictList">
+                                    <option>Cairo</option>
+                                    <option>Giza</option>
+                                    <option>Sohag</option>
+                                    <option>Qena</option>
+                                </datalist>
+                            </div>
+
+                            <div class="col-sm-2">
+                                <strong>Address</strong>
+                            </div>
+                            <div>
+                                <input id="AddressTxt" class="form-control" type="text" />
+                            </div>
+                            <div>
+                                <a href="#" onclick="AddLocation()"><img style="width:50px;height:50px;" src="~/Images/125582-matte-white-square-icon-signs-first-aid.png" /></a>
+                            </div>
+                        </div>
+
+                        <div class="fram">
+                            <div id="emailsDiv">
+                            </div>
+                            <div class="col-sm-2">
+                                <strong>Email</strong>
+                            </div>
+                            <div>
+                                <input id="emailText" class="form-control" type="email" />
+                            </div>
+                            <div>
+                                <a href="#" onclick="AddEmail()"><img style="width:50px;height:50px;" src="~/Images/125582-matte-white-square-icon-signs-first-aid.png" /></a>
+                            </div>
+
+                            <br /><br />
+                        </div>
+
+                        <div class="fram">
+                            <div class="col-sm-2">
+                                <strong>Telephone</strong>
+                            </div>
+                            <div>
+                                <input class="form-control" type="email" />
+                            </div>
+                            <div>
+                                <a onclick="AddEmail()"><img style="width:50px;height:50px;" src="~/Images/125582-matte-white-square-icon-signs-first-aid.png" /></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="tab3">
+                        <div class="col-sm-2">
+                            <strong>Test Type</strong>
+                        </div>
+                        <div class="col-sm-8">
+                            <input list="TestTypeLst" id="TestType" class="form-control">
+                            <datalist id="TestTypeLst">
+                                <option value="None" selected="selected">
+                                <option value="Type 1">
+                                <option value="Type 2">
+                                <option value="Type 3">
+                            </datalist>
+                        </div>
+
+                        <br /><br />
+                        <div class="col-sm-2">
+                            <strong>Test Degree</strong>
+                        </div>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="email" />
+                        </div>
+
+                        <br /><br />
+
+                        <div class="col-sm-2">
+                            <strong>Eq.Degree</strong>
+                        </div>
+                        <div class="col-sm-8">
+                            <input list="DegreeLst" class="form-control" type="text" />
+                            <datalist id="DegreeLst">
+                                <option value="None" selected="selected">
+                                <option value="Degree 1">
+                                <option value="Degree 2">
+                                <option value="Degree 3">
+                            </datalist>
+                        </div>
+
+                        <br /><br />
+
+                        <div class="col-sm-2">
+                            <strong>Eq.Percentage</strong>
+                        </div>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="number" />
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="tab4">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <!-- Nav tabs --><div class="card">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Current</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">History</a></li>
+
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="home">
+                                                <div class="col-sm-2">
+                                                    <strong>Available Period</strong>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <p>Fall - 2017 / 2018</p>
+                                                </div>
+                                                <br /><br />
+
+                                                <div class="col-sm-2">
+                                                    <strong>Branch</strong>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input list="BranchLst" id="Branch" class="form-control">
+                                                    <datalist id="BranchLst">
+                                                        <option value="None" selected="selected">
+                                                        <option value="Arish">
+                                                        <option value="Cairo">
+                                                        <option value="Kantara">
+                                                    </datalist>
+                                                </div>
+
+                                                <br /><br />
+
+                                                <div class="col-sm-2">
+                                                    <strong>Faculity</strong>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input list="FaculityLst" class="form-control" type="text" />
+                                                    <datalist id="FaculityLst">
+                                                        <option value="None" selected="selected">
+                                                        <option value="IT">
+                                                        <option value="Law">
+                                                        <option value="Historical">
+                                                    </datalist>
+                                                </div>
+                                                <br /><br />
+                                                <div class="col-sm-2">
+                                                    <strong>Date</strong>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <p>21 - 12- 2017  / 01:30 pm</p>
+                                                </div>
+                                            </div>
+
+
+                                            <div role="tabpanel" class="tab-pane" id="profile">
+                                                <div>
+                                                    <table class="table table-condensed">
+                                                        <tbody class="text-center">
+                                                            <tr class="text-uppercase jumbotron">
+                                                                <td><strong>Branch</strong></td>
+                                                                <td><strong>Faculty</strong></td>
+                                                                <td><strong>Date</strong></td>
+                                                                <td><strong>Status</strong></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Kantara</td>
+                                                                <td>Engineering</td>
+                                                                <td>22-2-2017</td>
+                                                                <td>
+                                                                    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="70"
+                                                                         aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                                                        70% Complete (Pendding)
+                                                                    </div>
+                                                                </td>
+                                                                <td class="btn-group-xs"><a href="/Applicant/ApplicationDetails" class="btn btn-info">View</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Arish</td>
+                                                                <td>Pharmacy</td>
+                                                                <td>20-2-2017</td>
+                                                                <td>
+                                                                    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="10"
+                                                                         aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                                        40% Complete (Refused)
+                                                                    </div>
+                                                                </td>
+                                                                <td class="btn-group-xs"><a class="btn btn-info">View</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Arish</td>
+                                                                <td>IT</td>
+                                                                <td>20-2-2017</td>
+                                                                <td>
+                                                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="90"
+                                                                         aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                                        90% Complete (Successfully)
+                                                                    </div>
+                                                                </td>
+                                                                <td class="btn-group-xs"><a class="btn btn-info">View</a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tfoot></tfoot>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br /><br />
+    <div>
+        <input type="submit" class="btn btn-primary" />
+    </div>
+    <br />
+</div>
+
+
+
+
+
+
+<style>
+    .nav-tabs {
+        border-bottom: 2px solid #DDD;
+    }
+
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+            border-width: 0;
+        }
+
+        .nav-tabs > li > a {
+            border: none;
+            color: #666;
+        }
+
+            .nav-tabs > li.active > a, .nav-tabs > li > a:hover {
+                border: none;
+                color: #4285F4 !important;
+                background: transparent;
+            }
+
+            .nav-tabs > li > a::after {
+                content: "";
+                background: #4285F4;
+                height: 2px;
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                bottom: -1px;
+                transition: all 250ms ease 0s;
+                transform: scale(0);
+            }
+
+        .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+            transform: scale(1);
+        }
+
+    .tab-nav > li > a::after {
+        background: #21527d none repeat scroll 0% 0%;
+        color: #fff;
+    }
+
+    .tab-pane {
+        padding: 15px 10px 10px 15px;
+        padding-bottom: 25px;
+    }
+
+    .card {
+        background: #FFF none repeat scroll 0% 0%;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+        margin-bottom: 30px;
+    }
+</style>
+
+<style>
+    .fram{
+        border:solid 2px #ddd;
+        border-radius:5px;
+        padding:5px;
+        margin:5px;
+        height:100%;
+        bottom:20px;
+    }
+    .fram div{
+        padding:5px;
+    }
+</style>
+
+
+
+<style>
+    .fa {
+        color: azure;
+        pointer-events: painted;
+    }
+
+    h1 {
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    media (min-width: 768px) {
+    }
+
+    .brand-pills > li > a {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    li.brand-nav.active a:after {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 9px solid #428bca;
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+        left: 100%;
+        z-index: 2;
+    }
+</style>
+
+<script>
+    function Toggle(id) {
+        $("#" + id).toggle("fade in");
+    }
+
+    function AddEmail() {
+        var buttons = "<a href=\"# \" class=\"btn btn-link\"><span class=\"glyphicon glyphicon-menu-up\"></span></a>";
+        buttons += "<a href=\"# \" class=\"btn btn-link\"><span class=\"glyphicon glyphicon-menu-down\"></span></a>";
+
+        $('#emailsDiv').after("<p>" + $("#emailText").val() + buttons + "</p>");
+
+    }
+    function AddLocation() {
+        var country = $("#Countrytxt").val();
+        var District = $("#Districttxt").val();
+        var Address = $("#AddressTxt").val();
+
+        var result = country + " - " + District + " - " + Address;
+        var buttons = "<a href=\"# \" class=\"btn btn-link\"><span class=\"glyphicon glyphicon-menu-up\"></span></a>";
+        buttons += "<a href=\"# \" class=\"btn btn-link\"><span class=\"glyphicon glyphicon-menu-down\"></span></a>";
+
+        $('#LocationDiv').after("<p>" + result + buttons + "</p>");
+    }
+    window.onload = function () {
+        $("#leftCol").addClass("collapse");
+        $("#ContentArea").css("width", "100%");
+        $("#ContentArea").css("margin-left", "10px");
+        $("#ContentArea").css("margin-right", "10px");
+        $("#subApplicant").fadeIn(2000, 200);
+    }
+</script>

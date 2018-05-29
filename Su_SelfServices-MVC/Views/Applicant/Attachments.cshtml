@@ -1,0 +1,61 @@
+﻿<div class="container-fluid">
+
+    <table class="table table-condensed">
+        <tbody class="text-center">
+            <tr class="text-uppercase jumbotron">
+                <td><strong>Attachment Type</strong></td>
+                <td><strong>Date</strong></td>
+                <td><strong>Review Status</strong></td>
+                <td><strong>Review Date</strong></td>
+            </tr>
+            <tr>
+                <td>Personal Pictures</td>
+                <td>2017-02-02</td>
+                <td><input type="checkbox" checked disabled/></td>
+                <td class="text-success"><strong>2017-02-04</strong></td>
+            </tr>
+            <tr>
+                <td>Certification</td>
+                <td>2017-02-02</td>
+                <td><input type="checkbox"  disabled /></td>
+                <td class="text-success"><strong>--</strong></td>
+            </tr>
+            <tr>
+                <td>Application</td>
+                <td>2017-02-02</td>
+                <td><input type="checkbox" checked disabled /></td>
+                <td class="text-success"><strong>2017-02-04</strong></td>
+            </tr>
+            <tr>
+                <td>Qualification Result</td>
+                <td>2017-02-02</td>
+                <td><input type="checkbox" checked disabled /></td>
+                <td class="text-success"><strong>2017-02-04</strong></td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+    <br /><br />
+    <div>
+        <label>Attachment Type : </label>
+        <input list="List" type="text" class="form-control" />
+        <datalist id="List">
+            <option>One</option>
+            <option>Two</option>
+        </datalist>
+    </div>
+    <br /><br />
+    <div class="kv-upload-progress">
+        <input id="input-b7" name="input-b7[]" multiple type="file" class="btn-default" data-allowed-file-extensions='["csv", "txt"]'>
+    </div>
+</div>
+<script>
+
+    window.onload = function () {
+        $("#leftCol").addClass("collapse");
+        $("#ContentArea").css("width", "100%");
+        $("#ContentArea").css("margin-left", "10px");
+        $("#ContentArea").css("margin-right", "10px");
+        $("#subApplicant").fadeIn(2000, 200);
+    }
+</script>

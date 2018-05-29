@@ -1,0 +1,331 @@
+﻿
+@{
+    ViewBag.Title = "Employee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*<section class="option-box col-xs-3">
+
+    <div class="color-option">
+
+        <div class="login" id="Login_Div" runat="server">
+
+            <div class="panel gray">
+                <div class="panel-heading" style="border-bottom: 1px solid;">
+                    <h3 class="panel-title border" style="font-weight: bold;">Login</h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-play  rotate"></i></span>
+                </div>
+                <div class="panel-body gray ">
+
+                    <div class="form-group">
+                        <asp:Label runat="server" ID="LblUserName" for="exampleInputEmail1" Style="font-weight: normal; font-size: small">User Name</asp:Label>
+                        <asp:TextBox runat="server" type="text" class="form-control" ID="TxtEmail" placeholder="User Name" Style="height: 25px" />
+                    </div>
+                    <div class="form-group">
+                        <asp:Label runat="server" ID="LblUserPassword" for="exampleInputPassword1" Style="font-weight: normal; font-size: small">Password</asp:Label>
+                        <asp:TextBox runat="server" type="password" class="form-control" ID="txtPassword" placeholder="Password" Style="height: 25px" />
+                    </div>
+
+                    <div class="form-group">
+                        <center>
+                            <asp:button runat="server" ID="btnLogin" type="submit" class="btn blue-button" style="width:90px" Text="Log In" EnableTheming="false"></asp:button>
+
+                        </center>
+                    </div>
+
+                </div>
+                <div class="divider">
+                    <hr />
+                </div>
+                <div class="form-group">
+                    <asp:LinkButton runat="server" ID="lnkForgotPassword" Style="font-size: x-small"><span class="glyphicon glyphicon-play"></span>&nbsp;Forgot My Password</asp:LinkButton>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+
+    </div>
+</section>*@
+
+
+<div class="form-inline container" id="EmployeeFirst">
+    <div class="row">
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Triggers</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;View University Triggers</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Create Custom Triggers</a></i></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;library</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Search for Book/Paper (Can Be By Topic)</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request a Book for Borrowing</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Borrowing Wait list</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Borrowing Status</a></i></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Events</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Events</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Add new Event</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Events to Join</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Upcoming Events</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Sync with my Google Calendar</a></i></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Events</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Events</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Add new Event</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Events to Join</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Upcoming Events</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Sync with my Google Calendar</a></i></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Requests</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;New Request</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Current Request Status</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request History</a></i></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Financial</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Card Transaction</a></i></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Profile</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Change Image</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Change Themes</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Shared Access</a></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="form-inline container hidden" id="EmployeeSecond">
+    <div class="row">
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Notifications</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;View Notification</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Create Custom Notification</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Mark Notification as Read</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Notification (Ex: Don’t Receive)</a></i></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Message</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Generate Message</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Inbox</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Sent</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Groups</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Live Chat</a></i></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Archive</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Documents</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Share Documents</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Document version</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request Extra space</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Space Status</a></i></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Online Orders</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Restaurant</a></i></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Survey</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Current Survey</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Survey History</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Survey Results</a></i></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Memories</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;University Memories</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Faculty Memories</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Memories</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Tagged IN</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Share Memories</a></i></li>
+            </ul>
+        </div>
+
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Training Courses</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Upcoming Training</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Courses</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Courses History</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Certificate</a></i></li>
+            </ul>
+        </div>
+
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Tasks</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Tasks</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Task History</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Deligation</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Mange Status For Tasks (Ex: ofline)</a></i></li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="form-inline container hidden" id="EmployeeThird">
+    <div class="row">
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;HR Services</i></h1>
+            <ul>
+                <li>
+                    <i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Performance</a></i>
+                    <ul>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp; My Performance Apprasal</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp; Apprasal History</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp; KPI's Progress</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp; HR Recommendations Status</a></i></li>
+                    </ul>
+                </li>
+                <li>
+                    <i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;HR Requests</a></i>
+                    <ul>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp; New Request</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp; Request Status</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp; Request History</a></i></li>
+                    </ul>
+
+                </li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Warrning</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Puneshments</a></i></li>
+                <li>
+                    <i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Louns</a></i>
+                    <ul>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Request</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Status</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Payment Plan</a></i></li>
+                    </ul>
+                </li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Medical Insurance</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Salary</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Bouns</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;allowances</a></i></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Transportation</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Booking</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Travel</a></i></li>
+                <li>
+                    <i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Current Travel</a></i>
+                    <ul>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Bus Info</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Driver Info</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Meeting Points</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Current Buss Location</a></i></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Dorms</i></h1>
+            <ul>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;New Booking</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Change Booking</a></i></li>
+                <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request Extra Service</a></i></li>
+                <li>
+                    <i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Tickets</a></i>
+                    <ul>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Generate Tickets</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Manage Current Tickets</a></i></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;History</a></i></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="margin-bottom: 50px">
+    <ul class="pager">
+        <li><a href="#" onclick="ShowEmployeeFirst()">1</a></li>
+        <li><a href="#" onclick="ShowEmployeeSecond()">2</a></li>
+        <li><a href="#" onclick="ShowEmployeeThird()">3</a></li>
+    </ul>
+</div>
+
+<style>
+    .ListHeader {
+
+        font-weight: 100;
+        font-size: 20px;
+        color: #3351c3;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 14px;
+
+    }
+</style>
+
+<script>
+            function ShowEmployeeFirst() {
+            $("#EmployeeFirst").removeClass("hidden");
+            $("#EmployeeSecond").addClass("hidden");
+            $("#EmployeeThird").addClass("hidden");
+        }
+        function ShowEmployeeSecond() {
+            $("#EmployeeSecond").removeClass("hidden");
+            $("#EmployeeFirst").addClass("hidden");
+            $("#EmployeeThird").addClass("hidden");
+        }
+        function ShowEmployeeThird() {
+            $("#EmployeeThird").removeClass("hidden");
+            $("#EmployeeFirst").addClass("hidden");
+            $("#EmployeeSecond").addClass("hidden");
+        }
+
+</script>
+

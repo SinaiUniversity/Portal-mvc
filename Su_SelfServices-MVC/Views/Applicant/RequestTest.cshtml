@@ -1,0 +1,50 @@
+﻿<div class="container-fluid">
+
+    <div id="SelectDiv" class="panel-body">
+        <div>
+            <table class="table table-condensed">
+                <tbody class="text-center">
+                    <tr class="text-uppercase jumbotron">
+                        <td><strong>Select</strong></td>
+                        <td><strong class="pull-left">Available Exam Name</strong></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" /></td>
+                        <td class="pull-left">IQ Test</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" /></td>
+                        <td class="pull-left">English Test</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+        <a onclick="ToggleDiv()" class="btn btn-primary"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp; Submit</a>
+    </div>
+
+    <div id="ResualtDiv" class="collapse">
+        <div>
+            <h1 class="text-center text-primary"><strong><i class="fa fa-envelope-o fa-lg"></i>&ensp;Send Request</strong></h1>
+            <h4 class="text-center">Your Request has been received and we will contact you via your e-mail as soon as possible</h4>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function ToggleDiv() {
+        $("#SelectDiv").fadeOut(300);
+
+        $("#ResualtDiv").fadeIn(500);
+        //$("#ResualtDiv").removeClass("fade");
+    }
+         
+    window.onload = function () {
+        $("#leftCol").addClass("collapse");
+        $("#ContentArea").css("width", "100%");
+        $("#ContentArea").css("margin-left", "10px");
+        $("#ContentArea").css("margin-right", "10px");
+        $("#subApplicant").fadeIn(2000, 200);
+    }
+</script>

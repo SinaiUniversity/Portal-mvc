@@ -1,0 +1,59 @@
+﻿<div class="container-fluid">
+
+    <div id="PersonalDiv" class="panel-body">
+        <div>
+            <table class="table table-condensed">
+                <tbody class="text-center">
+                    <tr class="text-uppercase jumbotron">
+                        <td><strong>Exam Name</strong></td>
+                        <td><strong>Exam Date</strong></td>
+                        <td><strong>Exam Time</strong></td>
+                        <td><strong>Location</strong></td>
+                        <td><strong>Result</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">IQ Test</td>
+                        <td><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;23-2-2017</td>
+                        <td><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;12:00 pm</td>
+                        <td>Cairo branch - Ring Road</td>
+                        <td class="text-danger"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Fail</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">English Test</td>
+                        <td><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;22-2-2017</td>
+                        <td><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;12:00 pm</td>
+                        <td>Cairo branch - Ring Road</td>
+                        <td class="text-success"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Pass</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">IQ Test</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">English Test</td>
+                        <td><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;22-2-2017</td>
+                        <td><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;12:00 pm</td>
+                        <td>Cairo branch - Ring Road</td>
+                        <td>--</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+    </div>
+    <a href="/Applicant/RequestTest" class="btn btn-primary"><i class="fa fa-retweet" aria-hidden="true"></i>&nbsp; Re Request Test</a>
+</div>
+<script>
+
+    window.onload = function () {
+        $("#leftCol").addClass("collapse");
+        $("#ContentArea").css("width", "100%");
+        $("#ContentArea").css("margin-left", "10px");
+        $("#ContentArea").css("margin-right", "10px");
+        $("#subApplicant").fadeIn(2000, 200);
+    }
+</script>

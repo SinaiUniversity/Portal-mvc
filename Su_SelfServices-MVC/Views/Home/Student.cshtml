@@ -1,0 +1,371 @@
+﻿
+@{
+    ViewBag.Title = "Student";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="form-inline container" id="First">
+        <div class="row">
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Assignments</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Upcoming Assignments</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Assignment Grade</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Online Assignments</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Online Trial Assignments</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Financial</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Current Balance</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Statement Request</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request History</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Card Transaction</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Requests</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;New Request</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Current Request Status</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request History</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Events</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Events</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Add new Event</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Events to Join</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Upcoming Events</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Sync with my Google Calendar</a></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Attendance</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Attendance</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Excuse Request</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Attendance official Repot</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Attendance Warnings</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;library</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Search for Book/Paper (Can Be By Topic)</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request a Book for Borrowing</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Borrowing Wait list</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Borrowing Status</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Academic Status</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Current Term / Last Term</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Registered Courses</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Upcoming Academic Events</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Academic Warnings</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Transcript non-official</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Academic Requests</a></i></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-inline container hidden" id="Second">
+        <div class="row">
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Archive</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Documents</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Share Documents</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Document version</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request Extra space</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Space Status</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Message</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Generate Message</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Inbox</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Sent</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Groups</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Live Chat</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Dorms</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;New Booking</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Change Booking</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request Extra Service</a></i></li>
+                    <li>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Tickets</a></i>
+                        <ul>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Generate Tickets</a></i></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Manage Current Tickets</a></i></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;History</a></i></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Online Orders</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Restaurant</a></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Triggers</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;View University Triggers</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Create Custom Triggers</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Notifications</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;View Notification</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Create Custom Notification</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Mark Notification as Read</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Notification (Ex: Don’t Receive)</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Requests</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;New Request</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Current Request Status</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request History</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Profile</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Change Image</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Change Themes</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Shared Access</a></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-inline container hidden" id="Third">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Survey</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Current Survey</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Survey History</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Survey Results</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Scholarship / Funding</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Request For Scholarship</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Follow up Current Scholarship</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Scholarship History</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Shared Access</i></h1>
+                <ul>
+                    <li>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Manage Shared Access</a></i>
+                        <ul>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Create New User for Shared Access</a></i></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Manage User Role</a></i></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Activity</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Upcoming Activities</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Activities</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Join Activity Request</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Activity History</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Activities History</a></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Memories</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;University Memories</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Faculty Memories</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Memories</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Tagged IN</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Share Memories</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Training Courses</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Upcoming Training</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Courses</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Courses History</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Certificate</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Social Activities</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Join Group</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Groups</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Achievements</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Elections</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Do Request</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Current Leaders</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Leaders Programs</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Achievements</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;announcements</a></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-inline container hidden" id="Fourth">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;University Awards</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Award Status</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Award History</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Study With Disability</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Responsible Officer and Contact</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Admission Assist</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Registration Assist</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Dedicated Seats</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Priority in service</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Academic Adjustment - Accessibility - Funding - Advising Services</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Applicants</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;New Application</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Applicstion Status</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Qualification Exams Results</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Up coming actions</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Sent Messages</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;View My Application</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Application Payments</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Attachmets</a></i></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h1 class="ListHeader"><i class="fa fa-arrow-circle-right" aria-hidden="true">&nbsp;Transportation</i></h1>
+                <ul>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Booking</a></i></li>
+                    <li><i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;My Travel</a></i></li>
+                    <li>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"><a href="#">&nbsp;Current Travel</a></i>
+                        <ul>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Bus Info</a></i></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Driver Info</a></i></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Meeting Points</a></i></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"><a href="#">&nbsp;Current Buss Location</a></i></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-bottom: 50px">
+        <ul class="pager">
+            <li><a href="#" onclick="ShowFirst()">1</a></li>
+            <li><a href="#" onclick="ShowSecond()">2</a></li>
+            <li><a href="#" onclick="ShowThird()">3</a></li>
+            <li><a href="#" onclick="ShowFourth()">4</a></li>
+        </ul>
+    </div>
+
+
+<style>
+    .ListHeader {
+
+        font-weight: 100;
+        font-size: 20px;
+        color: #3351c3;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 14px;
+
+    }
+</style>
+
+<script>
+        function ShowFirst() {
+            $("#First").removeClass("hidden");
+            $("#Second").addClass("hidden");
+            $("#Third").addClass("hidden")
+            $("#Fourth").addClass("hidden");
+        }
+        function ShowSecond() {
+            $("#Second").removeClass("hidden");
+            $("#First").addClass("hidden");
+            $("#Third").addClass("hidden");
+            $("#Fourth").addClass("hidden");
+        }
+        function ShowThird() {
+            $("#Third").removeClass("hidden");
+            $("#First").addClass("hidden");
+            $("#Second").addClass("hidden");
+            $("#Fourth").addClass("hidden");
+        }
+        function ShowFourth() {
+            $("#Fourth").removeClass("hidden");
+            $("#First").addClass("hidden");
+            $("#Second").addClass("hidden");
+            $("#Third").addClass("hidden");
+        }
+</script>
+
+

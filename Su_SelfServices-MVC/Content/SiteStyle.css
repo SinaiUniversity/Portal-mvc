@@ -1,0 +1,401 @@
+﻿
+body {
+}
+
+#MainNav {
+    /*width:100%;*/
+    height: 120px;
+    background: rgb(0,55,124); /* Old browsers */
+    width:100vw;
+}
+
+#leftCol {
+    position: absolute;
+    top:23.3%;
+    width:15%;
+    padding-right: 5px;
+
+    float: left;
+    margin: 0;
+}
+
+.navbar {
+    min-height: 25px !important;
+    min-height:40px;
+}
+
+
+.navbar-default {
+    background-color: rgba(209,209,209,1);
+    /*border-radius: 0 0 0 20px;*/
+    z-index: 9999;
+    position: absolute;
+    right: 0px;
+}
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: #777;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #000;
+    }
+
+.navbar-toggle {
+    margin-left: 15px;
+    padding: 0px;
+}
+
+.navbar-form {
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+}
+
+
+#TapArea {
+    /*width:100vw;*/
+    height: 28px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a7a9ac+0,d3d3d3+48,e0edd5+100,ffffff+100 */
+    background: rgb(167,169,172); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(167,169,172,1) 0%, rgba(211,211,211,1) 48%, rgba(224,237,213,1) 100%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(167,169,172,1) 0%,rgba(211,211,211,1) 48%,rgba(224,237,213,1) 100%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(167,169,172,1) 0%,rgba(211,211,211,1) 48%,rgba(224,237,213,1) 100%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7a9ac', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    padding: 0px;
+}
+
+#RightSearch {
+    height: 30px;
+    background-color: rgba(209,209,209,1);
+    border-radius: 0 0 0 20px;
+    border: 1px solid;
+    display: block;
+}
+
+    #RightSearch a {
+        color: #000;
+    }
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    width:100vw;
+    background-color: rgb(0,55,124);
+    z-index: 9999;
+    text-align: center;
+}
+
+ .footer p {
+        background-color: rgb(0,55,124);
+    z-index: 9999;
+        position: relative;
+        text-align: center;
+        color: white;
+        margin: auto;
+        padding: 5px;
+    }
+
+.rotate {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.rotate-inverse {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.taps {
+    position: relative;
+    top: -31px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+#panel-body {
+    padding: 0px;
+}
+
+.panel {
+    padding: 0px;
+}
+
+.border {
+    border-right: 1px dotted;
+    margin-right: 30px;
+}
+
+.list-inline .list-inline a {
+    color: rgb(0,55,124);
+    padding-left: 40px;
+}
+
+
+.panel {
+    border: none;
+}
+
+.panel-footer {
+    border-radius: 0 0 20px 20px;
+    border: none;
+}
+
+
+
+.gray {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
+    background: rgb(226,226,226); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+}
+/*-------------Top Menu Taps-------------------------*/
+
+.tab .nav-tabs {
+    position: relative;
+    border-bottom: none;
+}
+
+    .tab .nav-tabs li {
+        font-family:Tahoma;
+        margin-right:1px;
+        /*max-height:5px;*/
+    }
+
+        .tab .nav-tabs li a {
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+            font-weight: 600;
+            color: rgb(0,55,124);
+            padding-top:5px;
+            padding-bottom:8px;
+            padding-left:9px;
+            padding-right:9px;
+            background: #7099c2;
+            margin-right: 0;
+            border: 1px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            transition: all 0.5s ease 0s;
+        }
+
+            .tab .nav-tabs li a:before {
+                content: "";
+                width: 100%;
+                /*height: 3px;*/
+                background: rgb(167,169,172);
+                position: absolute;
+                top: 92%;
+                left: 0;
+                transition: all 0.3s ease 0s;
+            }
+
+            .tab .nav-tabs li a:hover:before,
+            .tab .nav-tabs li.active a:before,
+            .tab .nav-tabs li.active a:hover:before {
+                top: 0;
+            }
+
+            .tab .nav-tabs li a:after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: rgb(167,169,172);
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: -1;
+                transition: all 0.3s ease 0s;
+            }
+
+            .tab .nav-tabs li a:hover:after,
+            .tab .nav-tabs li.active a:after,
+            .tab .nav-tabs li.active a:hover:after {
+                top: 0;
+            }
+
+.nav-tabs li.active a,
+.nav-tabs li.active a:focus,
+.nav-tabs li.active a:hover,
+.nav-tabs li a:hover {
+    border: none;
+    color: rgb(0,55,124);
+}
+
+.tab .tab-content {
+    padding: 20px 15px 20px;
+    background: #ff7b0d;
+    font-size: 14px;
+    color: #555;
+    line-height: 26px;
+}
+
+    .tab .tab-content h3 {
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+/*--------End Top Menu Taps------------*/
+
+/*--------start login area------------*/
+
+.option-box {
+    position: relative;
+    top: 10px;
+    left: 0;
+    z-index: 888;
+    float: left;
+    padding: 0;
+}
+
+    .option-box .color-option {
+        float: left;
+        padding: 0;
+        width: 180px;
+    }
+
+
+    .option-box .gear-check {
+        padding: 10px;
+        color: black;
+        margin: auto;
+        position: absolute;
+        height: 390px;
+    }
+
+.blue-button {
+    background: #7099c2;
+    color: rgb(0,55,124);
+    font-weight:bolder;
+}
+
+.rotat {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    cursor: pointer;
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+    .rotat.down {
+        -moz-transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+/* End login Tool Box */
+.modalBackground {
+    background-color: Gray;
+    filter: alpha(opacity:60);
+    opacity: 0.6;
+}
+
+.modalPopup {
+    background-color: #ffffff;
+    border-color: Gray;
+}
+
+#ContentArea{
+    /*width:78%;*/
+    margin-left:15%;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1028px) {
+    /* STYLES HERE */
+
+
+    .list-inline .list-inline a {
+        padding-left: 10px;
+    }
+
+    .color-option {
+        width: auto;
+    }
+
+    .list-inline {
+        padding: 0px;
+    }
+
+    .option-box .gear-check {
+        height: 200px;
+    }
+
+    .navbar-default {
+        right: 0px;
+    }
+
+    #UlSubMenu .list-inline {
+        padding-left: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+
+
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 50%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}

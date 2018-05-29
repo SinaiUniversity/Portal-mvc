@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Applicant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="form-inline container" id="Fourth">
+    <div class="row">
+       <br>
+        <h1 class="text-center text-info">
+            The Available Semesters for Registrations
+        </h1>
+        <h3>
+            <span><img src="~/Images/if_user-available_87703.png" /></span>
+            Fall - 2017
+            <a href="/Home/Application" class="btn btn-sm btn-success">Apply Now&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+        </h3>
+
+        <br /><br />
+        <h3 class="text-danger">
+            <span><img style="background-color:red" src="~/Images/if_user-available_87703.png" /></span>
+            There's no semesters available for registers at this time
+        </h3>
+    </div>
+</div>
+
+<style>
+    .ListHeader {
+        font-weight: 100;
+        font-size: 20px;
+        color: #3351c3;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 14px;
+    }
+
+</style>
+
+
+
+
+<script>
+    window.onload = function () {
+        $("#LblUserName").text("Applicant ID");
+        $("#lnkSignup").removeClass("hidden");
+        $("#lnkSignup").click(function () {
+            window.URL = "~/Views/ForgotPassword";
+        });
+        $("#subApplicant").fadeIn(2000,200);
+    }
+</script>
+

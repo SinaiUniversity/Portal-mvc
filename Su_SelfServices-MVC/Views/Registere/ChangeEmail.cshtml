@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "ChangeEmail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="tab-pane active" id="tab1">
+    <br />
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <strong>Nationality</strong>
+            </div>
+            <div class="col-sm-8">
+                <input list="Nationality" id="NationalityLst" class="form-control">
+                <datalist id="Nationality">
+                    <option value="None" selected="selected">
+                    <option value="Egyption">
+                    <option value="Syrian">
+                    <option value="Saudi">
+                </datalist>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <strong>Nation ID</strong>
+            </div>
+            <div class="col-sm-8">
+                <input id="txtNationID" class="form-control" type="text" />
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <strong>Email</strong>
+            </div>
+            <div class="col-sm-8">
+                <input id="txtFirstName" class="form-control" type="text" />
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <strong>Confirm Email</strong>
+            </div>
+            <div class="col-sm-8">
+                <input id="txtLastName" class="form-control" type="text" />
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <strong>Birth Date</strong>
+            </div>
+            <div class="col-sm-8">
+                <input id="txtDate" class="form-control" type="date" />
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <strong>Gender</strong>
+            </div>
+            <div class="col-sm-8">
+
+                <input list="Gender" id="GenderLst" class="form-control">
+                <datalist id="Gender">
+                    <option value="None">
+                    <option value="Male">
+                    <option value="Female">
+                </datalist>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="pull-left">
+        <a id="btnChange" href="#" onclick="ShowSendEmailModal()" class="btn btn-sm  btn-primary">Change Email & Send </a>
+    </div>
+</div>
+
+
+<div id="SendModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="panel panel-primary">
+            <div class="panel-heading panel-sm">
+                <h5><b><i class="fa fa-paper-plane" aria-hidden="true">&ensp;Sending...!</i></b></h5>
+            </div>
+            <div id="succDiv" class="panel-body">
+                <strong class="text-success">Successful..!</strong> <p id="AlertMSG" class="text-primary">Email sent successfully ... Please check your inbox</p>
+            </div>
+            <div id="alerDiv" class="panel-body hidden">
+                <strong class="text-danger">Fail To send..!</strong> <p id="AlertMSG" class="text-danger">The data related to This Applicant ID : <strong>123456789</strong> Don't match with other data</p>
+            </div>
+            <div class="panel-footer">
+                <div class="btn-group-sm">
+                    <a class="btn btn-success hidden"> Confirm</a>
+                    <a class="btn btn-danger hidden"> Cancel</a>
+                    <a class="btn btn-primary" onclick="Closemodal()">Ok</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function ShowSendEmailModal() {
+        var id = $("#txtNationID").val();
+
+        if (id == "00000000000002") {
+            $('#alerDiv').removeClass("hidden");
+            $('#succDiv').addClass("hidden");
+        }
+        $('#SendModal').modal("show");
+    }
+    function Closemodal() {
+        $('#SendModal').modal("hide");
+    }
+    window.onload = function () {
+        $("#leftCol").remove();
+    }
+</script>
+<style>
+    .modal {
+        text-align: center;
+        padding: 0 !important;
+    }
+
+        .modal:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: -4px;
+        }
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+</style>
+

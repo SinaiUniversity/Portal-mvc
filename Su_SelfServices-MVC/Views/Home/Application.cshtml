@@ -1,0 +1,379 @@
+﻿  
+@{
+    ViewBag.Title = "Application";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/ShadyStyle.css" rel="stylesheet" />
+<div class="row">
+    <article class="col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+        <div id="wid-id-0">
+            <header role="heading">
+                <h3>New Application</h3>
+            </header>
+            <!-- widget div-->
+                <!-- widget content -->
+                <div class="widget-body">
+
+                    <div class="row">
+                        <form id="wizard-1" novalidate="novalidate">
+                            <div id="bootstrap-wizard-1" class="col-sm-12">
+                                <div class="form-bootstrapWizard">
+                                    <ul class="bootstrapWizard form-wizard">
+                                        <li id="tabBtn1" class="active" data-target="#step1">
+                                            <a href="#tab1" data-toggle="tab"><span class="step">1</span> <span class="title">Basic Information</span> </a>
+                                        </li>
+                                        <li id="tabBtn2" data-target="#step2" class="">
+                                            <a href="#tab2" data-toggle="tab"><span class="step">2</span> <span class="title">E-mail Validation</span> </a>
+                                        </li>
+                                        <li id="tabBtn3"  data-target="#step3">
+                                            <a href="#tab3" data-toggle="tab" onclick="GetSummary()"><span class="step">3</span> <span class="title">Finaliz Your Registry</span> </a>
+                                        </li>
+                                        <li id="tabBtn4" data-target="#step4">
+                                            <a href="#tab4" data-toggle="tab"><span class="step">4</span> <span class="title">Finish Registration</span> </a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab1">
+                                        <br />
+                                        <h3><strong>Step 1 </strong>- Basic Information</h3>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="col-sm-3">
+                                                    <strong>Nationality</strong>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input list="Nationality" id="NationalityLst" class="form-control">
+                                                    <datalist id="Nationality">
+                                                        <option value="None" selected="selected">
+                                                        <option value="Egyption">
+                                                        <option value="Syrian">
+                                                        <option value="Saudi">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="col-sm-3">
+                                                    <strong>Nation ID</strong>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input id="txtNationID" class="form-control" type="text" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+
+
+                                            <div class="col-sm-6">
+                                                <div class="col-sm-3">
+                                                    <strong>First Name</strong>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input id="txtFirstName" class="form-control" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="col-sm-3">
+                                                    <strong>Last Name</strong>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input id="txtLastName" class="form-control" type="text" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="col-sm-3">
+                                                    <strong>Birth Date</strong>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input id="txtDate" class="form-control" type="date" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="col-sm-3">
+                                                    <strong>Gender</strong>
+                                                </div>
+                                                <div class="col-sm-8">
+
+                                                    <input list="Gender" id="GenderLst" class="form-control">
+                                                    <datalist id="Gender">
+                                                        <option value="None">
+                                                        <option value="Male">
+                                                        <option value="Female">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="form-actions">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <ul class="pager wizard no-margin">
+                                                        <li class="next">
+                                                            <a id="btn1" href="#tab2" data-toggle="tab" onclick="GoNext(1)" class="btn btn-lg txt-color-darken btnBasic">Next </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="tab2">
+                                        <br />
+                                        <h3><strong>Step 2</strong> - E-mail Validation</h3>
+
+                                        <div class="form-actions">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="col-sm-3">
+                                                        <strong>E-mail</strong>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input class="form-control" id="txtEmail" type="email" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <div class="col-sm-3">
+                                                        <strong>Verifay E-mail</strong>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input id="txtVerifay" class="form-control" type="email" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12">
+                                                    <ul class="pager wizard no-margin">
+                                                        <li class="previous">
+                                                            <a href="#tab1" onclick="GoPrevious(2)" data-toggle="tab" class="btn btn-lg btn-default">Previous </a>
+                                                        </li>
+                                                        <li class="next">
+                                                            <a id="btn2" href="#tab3" onclick="GoNext(2)" data-toggle="tab" class="btn btn-lg txt-color-darken">Next </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="tab3">
+                                        <br />
+                                        <h3><strong>Step 3</strong> - Finaliz Your Registry</h3>
+                                        <div class="form-actions">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label id="lblNationaltySummry">Nationality : </label>
+                                                    <label id="TilNationaltySummry" title="Nationality">--</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label id="lblNationaltySummry2">Nation ID : </label>
+                                                    <label id="TilNationaltySummry2" title="Nationality">--</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label id="lblFirstName">First Name : </label>
+                                                    <label id="TilFirstName" title="Nationality">--</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label id="lblLastName">Last Name : </label>
+                                                    <label id="TilLastName" title="Nationality">--</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label id="lblDate">Date Of Birth : </label>
+                                                    <label id="TilDate" title="Nationality">--</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label id="lblGender">Gender : </label>
+                                                    <label id="TilGender">--</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label id="lblEmail">E-mail : </label>
+                                                    <label id="TilEmail">--</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <ul class="pager wizard no-margin">
+                                                    <li class="previous">
+                                                        <a href="#tab2" data-toggle="tab" onclick="GoPrevious(3)" class="btn btn-lg btn-default">Previous </a>
+                                                    </li>
+                                                    <li class="next">
+                                                        <a href="#tab4" data-toggle="tab" onclick="GoNext(3)" class="btn btn-lg txt-color-darken">Finish </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="tab4">
+                                        <br />
+                                        <h3><strong>Step 4</strong> - Finish Registration</h3>
+                                        <br />
+                                        <h1 class="text-center text-success"><strong><i class="fa fa-check fa-lg"></i>Complete</strong></h1>
+                                        <h4 class="text-center">You are registered and we will send you an email , you will not be able to login until your account has been approved</h4>
+                                        <br />
+                                        <br />
+                                        <div class="form-actions">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <ul class="pager wizard no-margin">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <!-- end widget content -->
+
+            <!-- end widget div -->
+
+        </div>
+        <!-- end widget -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="panel panel-primary">
+                    <div class="panel-heading panel-sm">
+                        <h5><b>Confirm Text Sample</b></h5>
+                    </div>
+                    <div class="panel-body">
+                       <strong class="text-danger">Error..!</strong> <p id="AlertMSG" class="text-muted text-danger">Body Messagage</p>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="btn-group-sm">
+                            <a class="btn btn-success hidden"> Confirm</a>
+                            <a class="btn btn-danger hidden"> Cancel</a>
+                            <a class="btn btn-primary" onclick="Closemodal()">Ok</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+@Html.Hidden("Alert", "");
+<style>
+    .btnBasic {
+        background-color: #0a1881;
+    }
+</style>
+<script>
+    function Closemodal() {
+        $('#myModal').modal("hide");
+    }
+
+    // Chech if Basic data is valid
+    function CheckBasic() {
+        var BD = $("#txtDate").val();
+        var gender = $("#GenderLst").val();
+        var nation = $("#txtNationID").val();
+
+        if (nation != "00000000000001" && nation != "00000000000002") {
+            $("#AlertMSG").text("The entered data do not match");
+            return false;
+        }
+        if (nation == "00000000000002") {
+            $("#AlertMSG").html("<p>You are registered before with this Applicant ID : <strong>123456789</strog><p>");
+            return false;
+        }
+        return true;
+    }
+
+    // Get Summary on tab 3
+    function GetSummary() {
+        var Email = $("#txtEmail").val();
+        var Verifay = $("#txtVerifay").val();
+        if (Email == Verifay) {
+            $("#TilNationaltySummry2").text($("#txtNationID").val());
+            $("#TilNationaltySummry").text($("#NationalityLst").val());
+
+            $("#TilFirstName").text($("#txtFirstName").val());
+            $("#TilLastName").text($("#txtLastName").val());
+
+            $("#TilDate").text($("#txtDate").val());
+            $("#TilGender").text($("#GenderLst").val());
+            $("#TilEmail").text($("#txtEmail").val());
+            $('#btn2').attr("href", "#tab3");
+
+            $('#tab2').removeClass("active");
+            $('#tab3').addClass("active");
+            $('#btn2').attr("href", "#tab3");
+
+        } else {
+            $('#tab3').removeClass("active");
+            $('#tab2').addClass("active");
+            $("#AlertMSG").text("The Email you enterd does not match");
+            $('#myModal').modal("show");
+            $('#btn2').attr("href", "#tab2");
+        }
+    }
+
+    function GoNext(id) {
+
+        var pag = $("#tabBtn" + id);
+
+        pag.removeClass("active");
+        var pagNext = $("#tabBtn" + (id + 1));
+        pagNext.addClass("active");
+
+        // case tab 1
+        if (pag.selector == "#tabBtn1") {
+            var result = CheckBasic();
+            if (!result) {
+                GoPrevious(id + 1)
+                $('#btn1').attr("href", "#");
+                $('#tab1').addClass("active");
+                $('#myModal').modal("show");
+                return;
+            }
+            $('#tab1').removeClass("active");
+            $('#tab2').addClass("active");
+            $('#btn1').attr("href", "#tab2");
+        }
+        // case tab 2
+        if (id == 2) {
+            GetSummary();
+        }
+    }
+
+    function GoPrevious(id) {
+        var pag = $("#tabBtn" + id);
+        pag.removeClass("active");
+        var pagNext = $("#tabBtn" + (id - 1));
+        pagNext.addClass("active");
+    }
+
+    window.onload = function () {
+        $("#leftCol").remove();
+    }
+</script>
+
+
+
+<style>
+    .modal {
+        text-align: center;
+        padding: 0 !important;
+    }
+
+        .modal:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: -4px;
+        }
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+</style>
